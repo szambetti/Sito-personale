@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>S.Z. | Samples</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <style>
+    * {
+
+    }
+
+      .panel {
+      	padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: fixed; top: 0; left: 0;
+        border-bottom: 1px solid rgba(0, 102, 104, 0.2);
+        z-index: 200;
+      }
+
+      .panel>div {
+      	padding: 0;
+        margin: 0;
+        background-color: white;
+        margin: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        z-index: 200;
+      }
+
+      #iniziali {
+      	padding: 0;
+        margin: 0;
+        background-color: white;
+        margin-top: 14px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        text-align: center;
+        color: #0066cc;
+        font-size: 28px;
+        font-family: 'Press Start 2P', cursive;
+        z-index: 199;
+      }
+
+      a {
+        color: #0066cc;
+        text-decoration: none;
+        border-bottom: 2px solid rgba(0, 102, 104, 0.2);
+      }
+
+      a:hover {
+        color: #0066cc;
+        border-bottom: 2px solid rgba(0, 102, 104, 1);
+      }
+
+      h1 {
+        width: 70%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p {
+        width: 70%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+      }
+
+      p a {
+        color: #0066cc;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        background-color: #e2e2e2;
+        border-bottom: 0px;
+      }
+
+      p a:hover {
+        background-color: #ccc;
+        border-bottom: 0px;
+      }
+
+      li.testo {
+        width: 70%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 15px;
+        text-align: justify;
+      }
+
+      #tags {
+        font-size: 10px;
+      }
+
+      #desc {
+        font-size: 12px;
+      }
+
+      img {
+        max-width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 3%;
+      }
+
+    </style>
+    	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117083989-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117083989-1');
+	</script>
+  </head>
+
+  <body>
+    <div class="panel">
+      <div id='iniziali' ><a href="/" style="border-bottom: none;">SZ</a></div>
+      <div><a href="/index1.html?option=bio">BIO</a></div>
+      <div><a href="/index1.html?option=cv">CV</a></div>
+      <div><a href="/index1.html?option=work">WORK</a></div>
+      <div><a href="/index1.html?option=contact">CONTACT</a></div>
+    </div>
+    <div class="panel" style="position: relative; top: 0; left: 0; z-index: 199; border-bottom: none">
+      <div id='iniziali' style="z-index: 199"><a href="/" style="border-bottom: none;">SZ</a></div>
+      <div style="z-index: 199"><a href="/index1.html?option=bio">BIO</a></div>
+      <div style="z-index: 199"><a href="/index1.html?option=cv">CV</a></div>
+      <div style="z-index: 199"><a href="/index1.html?option=work">WORK</a></div>
+      <div style="z-index: 199"><a href="/index1.html?option=contact">CONTACT</a></div>
+    </div>
+    <p id="tags">
+      <i>Tags: Sample work, Statistics, R, ggplot2, <a href="https://www.investopedia.com/terms/t/technicalanalysis.asp" target="_blank">technical analysis</a></i>
+    </p>
+    <h1>
+      Predicting Bitcoin pricing through technical analysis
+    </h1>
+    <p id="corpo">
+      Given the recent turmoil of the crypto market, I thought it might be captivating to forecast the future market trend through Bitcoin's traders behaviour. This implies no other variables other than the very currency holders' induced volatility and relative
+      returns are taken into account.
+    </p>
+    <img src="graph1.png">
+    <p id="desc">
+      Figure 1: Bitcoin closing prices from Jan 1 2017 to Jan 13th 2018, log of returns of closing prices computed as lg[(P<sub>t1</sub>-P<sub>t0</sub>)/P<sub>t0</sub>], and relative Hidden Markov Model States associated to log returns, processed by R.
+    </p>
+    <p id="corpo">
+      Within this <a href="https://en.wikipedia.org/wiki/Hidden_Markov_model" target="_blank">Markov process</a>, outputs are log returns characterised by three states:
+    </p>
+    <p><li class="testo">State 1 (red) correponds to positive average returns and high volatility.</li>
+    <li class="testo">State 2 (green) to negative average returns and high volatility.</li>
+    <li class="testo">State 3 (blue) to positive average returns and low volatility.</li></p>
+
+    <p id="corpo">
+      It is important to note the absence of negative returns and low volatility as 4<sup>th</sup> state. Such phenomenon has not occured throughout the selected time span, suggesting a possible underlying long-term appreciation of the digital currency.
+      In addition, it emphasises how negative returns have been purely the result of panic selling generated by a volatile environment.
+    </p>
+    <p id="corpo">
+      Predicing prices (or rather, a confidence interval in which they may lie) requires computing the distribution of log returns. By running a Shapiro-Wilk test in R, it is found that log daily returns are normally distributed, as the null hypothesis fails
+      to be rejected. As a result, knowing that close prices are distributed on according to ~ N (E(close price), σ<sup>2</sup>), a number of fitted hidden markov model simulations may be run to obtain the expected Bitcoin daily close price at a
+      95% and 80% confidence interval. After 10,000 30-day simulations, E(close price) results are highlighted in green in figure 2.
+    </p>
+    <img src="graph2.png">
+    <p id="desc">
+      Figure 2: expected bitcoin prices processed with R upon 10,000 daily similuations (green) plotted against actual market prices (orange).
+    </p>
+    <p id="corpo">
+      Despite the actual trend still lies within the light green area corresponding to the 80% daily confidence interval, there is an evident gap between expected and actual prices, which yet has diminished in light of recent bullish forces. In addition, the
+      hidden markov model has failed to predict the change in state: this is not a surprise and actually stands as indicator of when the unanticipated bubble burst. As a matter of fact, technical analysis, albeit precise in predicting one-way trends,
+      fails at recognising sudden trajectory changes and should not be employed in highly unstable environments and maybe introducing vector autoregression tecniques may help to achieve better forecasts. Finally, it must be underlined how predicting the
+      Bitcoin crash, define by many already as the most dramatic bubble in history, is a nearly impossible task to predict mathematically. In fact if one could at priori, there would be no such bubble.
+    </p>
+    <p id="desc">
+      2018 S. Zambetti
+    </p>
+
+  </body>
+
+</html>
+
