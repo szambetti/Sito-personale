@@ -1,0 +1,245 @@
+  /*	Reset 	*/
+      * {
+        padding: 0;
+        margin: 0
+      }
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      /* NAV + Nome */
+      .panel {
+        width: 80%;
+        min-width: 500px;
+        position: relative;
+        left: 50%;
+        right: -50%;
+        transform: translate(-50%, -50%);
+        border: 0px solid black;
+        animation-name: logo;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+      .nome {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+        color: black;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 20px;
+        border: 0px solid black;
+      }
+      nav {
+        width: 80%;
+        border: 0px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav ul {
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+      }
+      nav ul li {
+        display: inline;
+        list-style: none;
+        border: 0px solid black;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+        border-bottom: 2px solid rgba(0, 102, 104, 0.2);
+      }
+      a:hover {
+        color: #0066cc;
+        border-bottom: 2px solid rgba(0, 102, 104, 1);
+      }
+      /* Per schermi risoluzione minore */
+      @media all and (orientation: landscape) {
+        @media screen and (min-height: 481px) and (max-height: 620px) {
+          .fadein-testo {
+            position: relative;
+            top: 250px;
+          }
+          #foto {
+            width: 125px;
+          }
+          .testo-bio {
+            position: absolute;
+            left: 135px;
+            padding-bottom: 30px;
+          }
+          .testo-samples {
+            padding-bottom: 30px;
+          }
+          #cv {
+            padding-bottom: 30px;
+          }
+          #contact {
+            padding-bottom: 30px;
+          }
+          .panel {
+            position: relative;
+            top: 100px;
+          }
+          .nome {
+            font-size: 30px;
+          }
+          nav ul {
+            font-size: 22px;
+          }
+          p {
+            font-size: 16px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+        }
+        @media screen and (max-height: 520px) {
+          .fadein-testo {
+            position: relative;
+            top: 200px;
+          }
+          .panel {
+            position: relative;
+            top: 100px;
+          }
+          #foto {
+            width: 100px;
+          }
+          .testo-bio {
+            position: absolute;
+            left: 110px;
+            padding-bottom: 20px;
+          }
+          .testo-samples {
+            padding-bottom: 20px;
+          }
+          #cv {
+            padding-bottom: 20px;
+          }
+          #contact {
+            padding-bottom: 20px;
+          }
+          .nome {
+            font-size: 26px;
+          }
+          nav ul {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12px;
+          }
+          h1 {
+            font-size: 14px;
+          }
+          .mini-footer {
+            display: none
+          }
+        }
+      }
+      @media all and (orientation: portrait) {
+        @media screen and (min-height: 480px) and (max-height: 767px) {
+          .fadein-testo {
+            position: relative;
+            top: 250px;
+          }
+          #foto {
+            width: 125px;
+          }
+          .testo-bio {
+            position: absolute;
+            left: 135px;
+            padding-bottom: 30px;
+          }
+          .testo-samples {
+            padding-bottom: 30px;
+          }
+          #cv {
+            padding-bottom: 30px;
+          }
+          #contact {
+            padding-bottom: 30px;
+          }
+          .panel {
+            position: relative;
+            top: 100px;
+          }
+          .nome {
+            font-size: 30px;
+          }
+          nav ul {
+            font-size: 18px;
+          }
+          p {
+            font-size: 16px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+          .mini-footer {
+            display: none
+          }
+        }
+        @media (max-height: 480px) {
+          .fadein-testo {
+            position: relative;
+            top: 200px;
+          }
+          .panel {
+            position: relative;
+            top: 100px;
+          }
+          #foto {
+            width: 100px;
+          }
+          .testo-bio {
+            position: absolute;
+            left: 110px;
+            padding-bottom: 20px;
+          }
+          .testo-samples {
+            padding-bottom: 20px;
+          }
+          #cv {
+            padding-bottom: 20px;
+          }
+          #contact {
+            padding-bottom: 20px;
+          }
+          .nome {
+            font-size: 20px;
+          }
+          nav ul {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+          h1 {
+            font-size: 14px;
+          }
+          .mini-footer {
+            display: none
+          }
+        }
+      }
+      /* 	Animazioni container HTML */
+      @keyframes logo {
+        from {
+          top: 10%;
+        }
+        to {
+          top: 45%;
+        }
+      }
+      /* Nota che il top di html viene controllato da keyframes */
