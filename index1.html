@@ -1,6 +1,6 @@
 <!--
 ###############################################
-2018 S.Z.				  https://szambetti.com
+2021 S.Z.				  https://szambetti.it
 ###############################################
   -->
 <!DOCTYPE html>
@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!--- EXTERNAL STYLESHEET <link href="/css/szstyle.css" rel="stylesheet"> -->
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/index1.js"></script>
@@ -121,7 +120,7 @@
       }
 
       .testo-samples {
-        position: relative;
+        position: absolute;
         left: 0;
         top: 0;
         border: 0px solid red;
@@ -148,7 +147,7 @@
 
       a.a_title:hover {
         color: #0066cc;
-        border-bottom: 2px solid rgba(0, 102, 104, 1);
+        border-bottom: 2px solid rgba(0, 102, 204, 1);
       }
 
       p a {
@@ -172,7 +171,7 @@
         height: 4px;
       }
 
-      .mini-footer {
+      .footer {
         width: 80%;
         text-align: center;
         position: absolute;
@@ -275,6 +274,7 @@
             padding-bottom: 20px;
           }
           .testo-samples {
+            position: absolute; top: 5%;
             padding-bottom: 20px;
           }
           #cv {
@@ -295,7 +295,7 @@
           h1 {
             font-size: 14px;
           }
-          .mini-footer {
+          .footer {
             display: none
           }
         }
@@ -340,8 +340,21 @@
           h1 {
             font-size: 20px;
           }
-          .mini-footer {
+          .footer {
             display: none
+          }
+          @keyframes logo {
+            0% {
+              top: 45%;
+              opacity: 0;
+            }
+            30% {
+              opacity: 0.3;
+            }
+            100% {
+              top: 75px;
+              opacity: 1;
+            }
           }
         }
         @media screen and (max-height: 480px) {
@@ -382,9 +395,23 @@
           h1 {
             font-size: 14px;
           }
-          .mini-footer {
+          .footer {
             display: none
           }
+          @keyframes logo {
+            0% {
+              top: 45%;
+              opacity: 0;
+            }
+            30% {
+              opacity: 0.3;
+            }
+            100% {
+              top: 50px;
+              opacity: 1;
+            }
+          }
+        }
         }
       }
 
@@ -417,16 +444,17 @@
       </nav>
     </div>
     <div class="testo" id="bio">
-      <img src="https://szambetti.com/img/primopiano.jpg" id="foto">
+      <img src="/img/primopiano.jpg" id="foto">
       <div class="testo-bio">
-        <p>Recently graduated with a BSc in International Economics and Finance at Bocconi University, I have flanked my education with my interest for tech since I was 15, creating a small online community in 2011, that, albeit not managed by myself since
-          2014, still exists under <a href="http://www.pixelroad.net/" target="_blank">a new name</a>.
-          <br><br>Having had a discrete success, with more than 90.000 registered users and more than 1.800 single visits per day, what started just as a hobby eventually spurred me to deepen my knowledge of programming languages, starting with HTML and
-          moving on to Python and R. To complement my programming skills, I have become proficient in statistical software such as Stata and Tableau.
+        <p>Hi there! Thanks for stopping by. Here you can find a little about me.
+          <br><br>In 2017, I graduated with a BSc in International Economics and Finance at Bocconi University, with a thesis focusing on the obsolence of 'paper currency' in favour of its digitalised alias.
+           <a href="/docs/thesis_extract.pdf" target="_blank">Here</a> you can read an extract of it.
+          <br><br>Hence, I started working as a financial analyst, eventually moving to advanced analytics analyst at an electrorobotic company in Bergamo, Italy.
+          <br><br>While working, I pursused a Masters in Business Intellinge and Big Data Analytics at Università Bicocca, where I delved deeper in data science and engieneering.
+          <br><a href="/samples/BIBDA_final_project" target="_blank">Here</a> you can find my final project work.
           <br><br>Before university, I completed my high school studies through the International Baccalaureate Diploma programme at Hockerill College, UK.
-          <br><br>My thesis focused on the obsolence of 'paper currency' in favour of its digitalised alias, demonstrating that proactively reducing outstanding cash can increase overall welfare, government revenues and unlock crucial monetary policy
-          instruments. I have conducted an empirical analysis on the case of the Swedish economy to show the veracity of my claims. <a href="/docs/thesis_extract.pdf" target="_blank">Here</a> you can read an extract of it.
-          <br><br>Additionally, I occasionally write for <a href="https://themarketmogul.com/author/szambetti/" target="_blank">The Market Mogul</a>, an online think-tank journal.</p>
+          <br><br>In my spare time, I enjoy hiking, fly fishing and skiing. I am also a proud owner and enthusiast of electric vehicles :)
+
       </div>
     </div>
     <div class="testo" id="cv">
@@ -436,10 +464,9 @@
         <hr />
       </div><br>
       <br>
-      <p><a href="/cv/Simone_Zambetti_CV_ENG.pdf" target="_blank">English</a>
-        <br><br><a href="/cv/Simone_Zambetti_CV_ITA.pdf" target="_blank">Italiano</a></p>
+      <p><a href="/cv/Simone_Zambetti_CV_ENG.pdf" target="_blank">English</a> - <a href="/cv/Simone_Zambetti_CV_ITA.pdf" target="_blank">Italiano</a></p>
       <br> <br>
-      <h1>My profile on Bocconi portal</h1>
+      <h1>CV on the Bocconi portal</h1>
       <br>
       <div class="hr">
         <hr />
@@ -452,27 +479,38 @@
         <br>
         <div class="hr">
           <hr />
-        </div><br><br>
-        <p> <a href="https://szambetti.com/samples/btc" target="_blank">Predicting Bitcoin pricing through technical analysis</a> </p>
-        <p> Tools: R, Markov process</p>
+        </div><br>
+        <p> <a href="/samples/BIBDA_final_project" target="_blank">Final masters project work</a> | 2021</p>
+        <p> Tools and topics: ETL, Data viz, Machine learning, Snowflake, PowerBI, Pytorch, FBProphet, Databricks</p>
         <p> </p><br>
-        <p> <a href="https://szambetti.com/samples/f1" target="_blank">Visualising nationalities in Formula 1</a></p>
-        <p> Tools: Tableau </p>
+        <p> <a href="/samples/ev_depreciation" target="_blank">Electric vehicles in Italy, a market analysis</a> | 2020</p>
+        <p> Tools and topics: ETL, Data viz, Scraping, Selenium, MongoDB, OpenRefine, PowerBI</p>
         <p> </p><br>
-        <p> <a href="https://szambetti.com/docs/AI_group_work.pdf" target="_blank">Alternative investments portfolio allocation (group work)</a> </p>
+        <p> <a href="/samples/nlp" target="_blank">Text mining and NLP on academic papers</a> | 2020</p>
+        <p> Tools and topics: Machine learning, deep learning, word embeddings, nlp, spark, databricks, google colab, Keras</p>
+        <p> </p><br>
+        <p> <a href="/samples/sas" target="_blank">Data mining in SAS</a> | 2020</p>
+        <p> Tools and topics: Machine learning, data mining, SAS, scraping, openrefine</p>
+        <p> </p><br>
+        <p> <a href="/docs/AI_group_work.pdf" target="_blank">Alternative investments portfolio allocation</a> | 2017</p>
         <p> Tools: MS Office, Stata </p>
         <p> </p><br>
-        <p> <a href="https://szambetti.com/docs/thesis_extract.pdf" target="_blank">Thesis extract</a> </p>
+        <p> <a href="/docs/thesis_extract.pdf" target="_blank">Thesis extract</a> | 2017</p>
         <p> Tools: MS Office, Stata </p>
+        <p> </p><br>
+        <p> <a href="/docs/tesla.pdf" target="_blank">Tesla and emobility</a> | 2017</p>
+        <p> Tools: MS Office </p>
+        <p>  </p>
       </div>
     </div>
     <div class="testo" id="contact">
+      <div class="testo-samples">
       <h1>Mail:</h1>
       <br>
       <div class="hr">
         <hr />
       </div><br>
-      <p style="text-align: left;">Personal address: <a href="mailto:simon.zambetti@gmail.com">simon.zambetti@gmail.com</a> <br> University address: <a href="mailto:simone.zambetti@studbocconi.it">simone.zambetti@studbocconi.it</a>
+      <p style="text-align: left;">Personal address: <a href="mailto:simon.zambetti@gmail.com">simon.zambetti@gmail.com</a>
         <br> <br>
         <h1>Phone:</h1>
         <br>
@@ -480,9 +518,17 @@
           <hr />
         </div><br>
         <p> +39 329 709 6705 </p>
-    </div>
-    <div class="mini-footer">
-      szambetti.com | Last updated: Apr '18
+        <br> <br>
+        <h1>Other:</h1>
+        <br>
+        <div class="hr">
+          <hr />
+        </div><br>
+	      <p> <a href="https://github.com/szambetti" target="_blank">Github</a> - <a href="https://it.linkedin.com/in/simone-zambetti" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    <div class="footer">
+      szambetti.it | Last updated: Apr '21
     </div>
   </body>
 

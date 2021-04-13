@@ -1,0 +1,22 @@
+	    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+		* { padding: 0; margin: 0; }
+		body { background-color: #fff; }
+        div.content { animation: testo 2s; -webkit-animation-iteration-count: 1; width: 620px; color: #000; font-family: 'Montserrat', sans-serif; font-weight: light; font-size: 16px; line-height: 20px; margin-bottom: 15px; -webkit-font-smoothing: antialiased; text-shadow: 0px 0px 0px #000000; position: absolute; left: 500px; top: 135px; }
+		div.b {animation-timing-function: ease;  animation: foto 2s; -webkit-animation-iteration-count: 1; width: 150px; color: #000; font-family: 'Montserrat', sans-serif; font-weight: 200; font-size: 12px; -webkit-font-smoothing: antialiased; position: absolute; left: 50px; top: 700px;      }
+		div.cv { animation: cv 2s; -webkit-animation-iteration-count: 1; animation-timing-function: ease; width: auto; max-width: 150px; color: #000; font-family: 'Montserrat', sans-serif; font-weight: light; font-size: 16px; line-height: 20px; margin-bottom: 15px; -webkit-font-smoothing: antialiased; text-shadow: 0px 0px 0px #000000; position: relative; left: 785px; top: 655px;      }
+        @keyframes testo {from {left: 450px;} to {left: 500px;}}
+		#cv {animation-timing-function: ease; }
+        @keyframes cv {from {left: 735px;} to {left: 785px;}}
+		a { color: #0066cc; text-decoration: none; border-bottom: 2px solid rgba(0,102,104,0.2);}
+        a:hover { color: #0066cc; border-bottom: 2px solid rgba(0,102,104,1);}
+		#titolo { position: absolute; left: 50px; top: 50px; }
+		#ppiano {animation-timing-function: ease;  animation: foto 2s; -webkit-animation-iteration-count: 1; width: 419px; height: 629px;  position: absolute; left: 50px; top: 135px}
+		@keyframes foto {from {left: 0px;} to {left: 50px;}}
+		#links {width: auto; color: #000; font-family: 'Montserrat', sans-serif; font-weight: light; font-size: 18px; -webkit-font-smoothing: antialiased; position: absolute; left: 50px; top: 100px; }
+		#lingua1 {list-style-type:none; position: absolute; left: 115px; top: 25px; }
+		#lingua1 a:link,#navlist a:visited{text-decoration: none; opacity:0.6; border-style: none;}
+		#lingua1 a:hover{text-decoration: none; opacity:1; border-style: none; }
+		#lingua2 {color: #000; font-family: 'Montserrat', sans-serif; font-weight: light; font-size: 12px; list-style-type:none; position: absolute; left: 50px; top: 25px; }
+		#lingua2 a:link,#navlist a:visited{text-decoration: none; opacity:0.6; border-style: none;}
+		#lingua2 a:hover{text-decoration: none; opacity:1; border-style: none; }
+		.photo {display: none;}
